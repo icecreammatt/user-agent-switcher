@@ -1,0 +1,38 @@
+html,
+body {
+  height: 130px;
+  width: 130px;
+  margin: 0;
+  background-color: #00000061;
+}
+
+.ua-choices,
+.domain-choices {
+  height: 120px;
+  width: 120px;
+  margin: 0;
+}
+
+.ua-choices,
+.domain-choices {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.ua-choice,
+.domain-choice {
+  height: 20%;
+  margin: 0.2em;
+  padding: 0.2em;
+  background-color: #E5F2F2;
+  cursor: pointer;
+}
+
+.ua-choice:hover {
+  background-color: #CFF2F2;
+}
+
+.domain-choice:hover {
+  background-color: #CFF2F2;
+}
