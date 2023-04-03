@@ -1,4 +1,4 @@
-# user-agent-rewriter
+# user-agent-switcher
 
 ## What it does
 
