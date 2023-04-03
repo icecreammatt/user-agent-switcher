@@ -1,5 +1,5 @@
 {
-  "description": "Adds browser action icon to toolbar to choose user agent string from popup menu. See https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Examples#user-agent-rewriter",
+  "description": "This is similar to the example but with a slightly improved UI and support for Edge.",
   "manifest_version": 2,
   "name": "user-agent-switcher",
   "version": "1.1",
