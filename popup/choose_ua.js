@@ -11,4 +11,14 @@ document.addEventListener("click", (e) => {
     backgroundPage.setUaString(chosenUa);
     return;
   }
+  if (e.target.id === 'ua-toggle') {
+    let backgroundPage = browser.extension.getBackgroundPage();
+    let isEnabled = e.target.checked
+    backgroundPage.toggleActive(isEnabled);
+    return;
+  }
+
 });
+let backgroundPage = browser.extension.getBackgroundPage();
+let enabled = backgroundPage.getEnabled();
+document.getElementById('ua-toggle').checked = enabled;

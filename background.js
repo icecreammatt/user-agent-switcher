@@ -1,5 +1,7 @@
 "use strict";
 
+let enabled = false;
+
 /*
 Map browser names to UA strings.
 */
@@ -20,9 +22,11 @@ let ua = uaStrings["Firefox 41"];
 Rewrite the User-Agent header to "ua".
 */
 function rewriteUserAgentHeader(e) {
-  for (let header of e.requestHeaders) {
-    if (header.name.toLowerCase() === "user-agent") {
-      header.value = ua;
+  if (enabled) {
+    for (let header of e.requestHeaders) {
+      if (header.name.toLowerCase() === "user-agent") {
+        header.value = ua;
+      }
     }
   }
   return {requestHeaders: e.requestHeaders};
@@ -45,3 +49,13 @@ function setUaString(uaString) {
   ua = uaStrings[uaString];
   console.log(`UA String ${ua}`);
 }
+
+function toggleActive(isEnabled) {
+  enabled = isEnabled;
+  console.log(`Enabled = ${enabled}`);
+}
+
+function getEnabled() {
+  return enabled;
+}
+
