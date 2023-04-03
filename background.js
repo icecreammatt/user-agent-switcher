@@ -17,6 +17,7 @@ let uaStrings = {
 Initialize the UA to Firefox 41.
 */
 let ua = uaStrings["Firefox 41"];
+let uaShort = '';
 
 /*
 Rewrite the User-Agent header to "ua".
@@ -46,6 +47,7 @@ browser.webRequest.onBeforeSendHeaders.addListener(rewriteUserAgentHeader,
 Update ua to a new value, mapped from the uaString parameter.
 */
 function setUaString(uaString) {
+  uaShort = uaString;
   ua = uaStrings[uaString];
   console.log(`UA String ${ua}`);
 }
@@ -59,3 +61,6 @@ function getEnabled() {
   return enabled;
 }
 
+function getSelection() {
+  return uaShort;
+}
