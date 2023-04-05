@@ -1,8 +1,8 @@
 {
-  "description": "This is similar to the example but with a slightly improved UI and support for Edge.",
+  "description": "Switch between different browser user-agents",
   "manifest_version": 2,
   "name": "user-agent-switcher",
-  "version": "1.1",
+  "version": "1.2",
   "homepage_url": "https://github.com/icecreammatt/user-agent-switcher",
   "icons": {
     "48": "icons/settings-outline.svg"
