@@ -1,20 +1,24 @@
 html,
 body {
-  height: 160px;
-  width: 430px;
+  height: 230px;
+  width: 125px;
   margin: 0;
   background-color: #F1F1F1;
 }
 
-.ua-choices,
-.domain-choices {
+#ua-choice {
+  width: 95px;
+  padding-top: 5px;
+}
+
+.ua-choices {
   height: 120px;
   width: 120px;
   margin: 0;
+  margin-bottom: 10px;
 }
 
-.ua-choices,
-.domain-choices {
+.ua-choices {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -25,14 +29,14 @@ body {
   height: 20%;
   margin: 0.2em;
   padding: 0.2em;
-  background-color: #E5F2F2;
   cursor: pointer;
+  background-color: #F1F1F1;
+}
+
+input {
+  margin: 10px;
 }
 
 .ua-choice:hover {
-  background-color: #CFF2F2;
-}
-
-.domain-choice:hover {
-  background-color: #CFF2F2;
+  background-color: grey;
 }
